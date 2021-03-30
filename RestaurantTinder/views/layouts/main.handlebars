@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Restauranteur</title>
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:100" rel="stylesheet"> Do we want fonts? -->
+
+    <!-- <link rel="stylesheet" href="../../sass/dist/sassStyle.css"> 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.runtime.js" charset="utf-8" defer></script>
+     <script src="buttonsTemplate.js" charset="utf-8" defer></script>
+    <script src="headerTemplate.js" charset="utf-8" defer></script>
+    <script src="leftcardTemplate.js" charset="utf-8" defer></script>
+    <script src="rightcardTemplate.js" charset="utf-8" defer></script>
+    <script src="settingsmenuTemplate.js" charset="utf-8" defer></script> 
+    <script src="cardsTemplate.js" charset="utf-8" defer></script> 
+    <script src="/script.js" charset="utf-8" defer></script>
+	<script src="/all-templates.js" charset="utf-8" defer></script>
+	<script src="/homepage.js" charset="utf-8" defer></script>-->
+
+	<script src="/script.js" charset="utf-8" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.runtime.js" charset="utf-8" defer></script>
+	<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@500&display=swap" rel="stylesheet">
+	
+	<script src="/homepage.js" charset="utf-8" defer></script>
+	<link rel="stylesheet" href="/sassStyle.css"> 
+  </head>
+  <body>
+    <div id="header-bar">
+		<img id="header-bar-settings-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png" alt="settings">
+		<div id="header-bar-text">
+			Restauranteur
+		</div>
+		<div id="header-space-holder"></div>
+	</div>
+    {{{body}}}
+    {{> restaurantProfile}}
+    {{> buttons}}
+</body>
+</html>
