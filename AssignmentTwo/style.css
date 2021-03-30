@@ -1,0 +1,236 @@
+    /*
+ * You should write your CSS in this file.  Don't forget to add your name and
+ * @oregonstate.edu email address below.
+ *
+ * name:Rudy Peralta
+ * email: peraltar@oregonstate.edu
+ */
+    
+    * {
+        font-family: Roboto;
+    }
+    
+    img {
+        /* min-width: 200px;
+    min-height: 100px; */
+        max-width: 300px;
+        max-height: 300px;
+        height: auto;
+    }
+    
+    h1 {
+        margin: 0;
+    }
+    
+    h2 {
+        margin: 5px;
+        padding: 5px;
+    }
+    
+    body {
+        margin: 0px;
+        width: 100%;
+    }
+    
+    header {
+        display: flex;
+        justify-content: left;
+        position: relative;
+        left: 0px;
+        padding: 0px;
+        padding-bottom: 10px;
+        height: 150px;
+        width: 100%;
+        background-color: black;
+    }
+    /* General Resets ^^^ Stuff was annoying with this. */
+    /* ----------- Buttons ------------------ */
+    
+    .action-button {
+        background-color: black;
+        color: white;
+        height: 40px;
+        width: 150px;
+        border-radius: 4px;
+        border-style: solid;
+        border-color: black;
+    }
+    
+    .action-button:hover {
+        color: black;
+        background-color: bisque;
+        border-width: 1px;
+    }
+    
+    #sell-something-button {
+        /* Find a color to stick in this, the
+    regular one is darker. */
+        background-color: rgb(223, 138, 3);
+        margin: 30px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        color: white;
+        font-size: 20px;
+        border-style: hidden;
+        border-radius: 50%;
+        box-shadow: 2px 2px 10px 0px #888888;
+        width: 40px;
+        height: 40px;
+        /* height: 28px; */
+        padding: 0px;
+    }
+    
+    #sell-something-button:hover {
+        width: 48px;
+        height: 48px;
+        outline: #d6d6d6;
+    }
+    /* End of Button CSS */
+    /* Header Related CSS */
+    
+    .header-image-container>img {
+        height: 150px;
+        width: 150px;
+    }
+    
+    .site-title {
+        padding-top: 35px;
+    }
+    
+    .site-title>a {
+        font-family: 'Roboto Slab';
+        font-size: 80px;
+        font-weight: 200;
+        color: white;
+        text-decoration: none;
+    }
+    /* End of Header Related CSS */
+    /* Filter Container Related CSS */
+    
+    .filter-container {
+        display: flex;
+        flex-direction: column;
+        background-color: gray;
+        border-radius: 2px;
+        margin: 10px;
+        padding: 15px;
+        padding-top: 0px;
+        float: left;
+        width: 250px;
+        background-color: #e9e9e9;
+    }
+    
+    input[type=text] {
+        width: 80%;
+        margin: 5px;
+        outline: #cccccc;
+    }
+    
+    #filter-min-price {
+        width: 75%;
+    }
+    
+    #filter-max-price {
+        width: 75%;
+    }
+    
+    #filter-city {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 30px;
+        width: 172%;
+    }
+    
+    .filter-input-container {
+        border-color: #e9e9e9;
+        display: inherit;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    .filter-input-label {
+        margin-right: 20px;
+    }
+    
+    #filter-text {
+        width: 100%;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    
+    .filter-container>button {
+        justify-content: center;
+        margin-top: 20px;
+        width: 100%;
+    }
+    
+    #filter-update-button {
+        justify-content: center;
+    }
+    
+    #filter-condition {
+        width: 100%;
+    }
+    /* End of Filter Container CSS */
+    /* Post Related CSS Items */
+    
+    .post {
+        margin: 10px;
+        border-radius: 4px;
+        border-color: #e9e9e9;
+        border-style: solid;
+        height: 300px;
+        width: 350px;
+        align-content: center;
+    }
+    
+    #posts {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .post-title {
+        color: rgb(214, 137, 49);
+    }
+    
+    .post-title:link {
+        text-decoration: none;
+    }
+    
+    .post-title:hover {
+        text-decoration: underline;
+    }
+    
+    .post-price {
+        border: solid gray;
+        border-radius: 4px;
+        border-width: 1px;
+        padding: 2px;
+        margin: 10px;
+        background-color: rgb(246, 246, 246);
+    }
+    
+    .post-info-container {
+        padding: 15px;
+        padding-top: 5px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .post-image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .post-image-container>img {
+        max-height: 240px;
+        margin: 8px;
+    }
+    /* End of post related CSS */

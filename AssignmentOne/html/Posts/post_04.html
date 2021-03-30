@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rudy's Blog Post Three</title>
+    <link rel="stylesheet" href="../../css/globalResets.css">
+    <link rel="stylesheet" href="../../sass/dist/sassStyle.css">
+</head>
+
+<body>
+    <div class="content-container">
+        <header class="underlined-text">
+            <h1 class="header-text">Rudy's Blog</h1>
+        </header>
+        <h2>Assignment Five Post!</h2>
+        <h3 class="underlined-text">Alright, I got some things to say about Handlebars...</h3>
+        <p class="content-paragraph">
+            &emsp;&emsp;&emsp;Let me start this off by saying that I do not enjoy Handlebars at all. Not because it's a bad templating tool, quite the opposite actually, it provides a good method of dynamically generating content. No, my issue with it is just how
+            frustrating the supposedly "helpful" features it contains are, specifically with its helpers.
+        </p>
+        <p class="content-paragraph">
+            &emsp;&emsp;&emsp;Handlebars helpers like the<strong class="orange-text">{{#if}} and {{#unless}}</strong>blocks are supposed to provide a way for you to conditionally render a formatting block. Conditional rendering sounds like a wonderful
+            feature to have if I want to just use one view and add things to it depending on the parameters I pass in, there's only one small issue...<strong>THE DAMN THINGS AREN'T INTUITIVE TO WORK WITH.</strong>
+        </p>
+        <p class="content-paragraph">
+            &emsp;&emsp;&emsp;First off, if I want to use the conditional helpers I'd expect them to be able to evaluate a true or false condition, then generate the content based on whether or not the condition failed or not. It doesn't have to be anything complicated,
+            just let me use an == to be able to decide whether or not the content should render. I would like to be able to decide if something doesn't exist, then execute the block, and that makes sense and it rather intuitive. Handlebars never really
+            got the memo though, since the<strong class="orange-text">{{#if}}</strong>is actually not even a real conditional, it doesn't check if something exists before it executes, no sir. If a Handlebars<strong class="orange-text">{{#if [variable]}}</strong>helper
+            doesn't detect a variable there in the first place, it just refuses to render the content altogether. Which leads me to my second issue with HB.
+        </p>
+        <h3 class="underlined-text">IT'S SO ANNOYING TO DEBUG</h3>
+        <blockquote class="fancy-blockquote">"Oh but there's not really that many things that you have to even worry about with Handlebars, what would you have to debug about it?" -- Some random nerd
+        </blockquote>
+        <p class="content-paragraph">
+            &emsp;&emsp;&emsp;See, this is why web development makes me seem violent to random bystanders. You would<i>technically</i>be right saying that HB doesn't really have too many features to worry about. It is a very lightweight framework after
+            all, however, one very important thing to consider about it is that Handlebars<b>Doesn't. Throw. Non. Critical. Errors.</b>
+        </p>
+        <p class="content-paragraph">&emsp;&emsp;&emsp;If I make a typo in a helper variable, I don't want to have to spend hours chasing every possible documented error known to the framework. Only to find out that I wasn't dealing with an end of days bug, but a typo I'd made many
+            hours ago. Okay, so Handlebars has this really annoying feature with its<strong class="orange-text">{{#if}}</strong>blocks; if the variable doesn't exist, or fits a bunch of other empty condition criteria, Handlebars goes ahead and doesn't
+            bother rendering your content. So, in cases where I've made a typo between post and posts, but correctly pass in what I believe to be the helper variable, my console won't even bother telling me jack diddly about missing variables, or anything
+            like that. On top of that, since HB has nothing to do with the javascript once it's rendered, I can't even use the console to check whether or not the conditon is even being fulfiled or not.
+        </p>
+        <p class="content-paragraph">
+            <i>&emsp;&emsp; Le sigh</i>Anyways, I complain but after I got used to Handlebars' workflow it was actually pretty nice to work with and let me focus on creating the content versus having to worry about how I wanted to reuse HTML that i'd
+            written before. In the end I'd probably rate it a solid<b>7.1 ducks out of 10.</b>A respectable score.
+        </p>
+        <a href="../index.html">Wanna go back to the index? Here you go :^)</a>
+
+    </div>
+</body>

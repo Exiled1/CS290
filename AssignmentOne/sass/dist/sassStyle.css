@@ -1,0 +1,59 @@
+@charset "UTF-8";
+body {
+  font: "Fira Mono", monospace;
+  font-size: 18px;
+  padding: 20px;
+}
+
+/* Yo, by the way, this piece of code right here might fuck you up later, somake sure to look at it if there's strange alignment issues that go on inside of your paragraph contents, specifically with things like flexboxes :^) */
+p {
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+p > * {
+  padding: 10px;
+}
+
+.content-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-paragraph {
+  padding-left: 7.4074074074%;
+  padding-right: 7.4074074074%;
+}
+
+.underlined-text {
+  text-decoration: underline;
+}
+
+.header-text {
+  font-size: 45px;
+}
+
+.orange-text {
+  color: #db6d06;
+}
+
+.fancy-blockquote {
+  background: #f9f9f9;
+  width: 71.4285714286%;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "“" "”" "‘" "’";
+}
+.fancy-blockquote:before {
+  color: #ccc;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+.fancy-blockquote p {
+  display: inline;
+}
